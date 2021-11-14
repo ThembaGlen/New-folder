@@ -12,12 +12,18 @@ html, body{
 
 /*------------start navbar styling-----------------*/
 .nav{
+
     background: white;
     padding:0 2rem;
-    height:0rem;
+    height:0rem;    /* height creates a collapsable nav menu*/
     min-height: 10vh;
 }
 
+.nav.nav-brand a{
+    font-size: 1.6rem;
+    padding:1rem 0;
+    text-decoration:none;
+}
 
 
 /*------*------end navbar styling---------*--------*/
