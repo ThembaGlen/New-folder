@@ -1,0 +1,30 @@
+/* font family Shalimar*/
+@font-face {
+    font-family: Shalimar;
+    src: url("../fonts/Shalimar/Shalimar-Regular.ttf")
+}
+/* font family Estonia*/
+@font-face {
+    font-family: Estonia;
+    src: url("../fonts/Estonia/Estonia-Regular.ttf")
+}
+/* font family Lora*/
+@font-face {
+    font-family: Lora;
+    src: url("../fonts/Lora/Lora-VariableFont_wght.ttf")
+}
+/* font family Montagu_Slab*/
+@font-face {
+    font-family: Montagu_Slab;
+    src: url("../fonts/Montagu_Slab/MontaguSlab-VariableFont_opsz\,wght.ttf")
+}
+/* font family Quicksand*/
+@font-face {
+    font-family: Quicksand;
+    src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf")
+}
+/* font family Explora*/
+@font-face {
+    font-family: Explora;
+    src: url("../fonts/Explora/Explora-Regular.ttf")
+}

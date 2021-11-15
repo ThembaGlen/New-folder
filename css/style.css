@@ -1,4 +1,4 @@
-
+@import url(../css/fonts.css);
 /*----------start body styling------------*/
 html, body{
     margin:0%;
@@ -24,10 +24,19 @@ html, body{
         list-style-type: none;
     }
 
-    /*---------------------Global Classes--------------------------*/
+    /*---------------------End Global Classes--------------------------*/
+    
 
+:root{
+        /*    Theme colours  */
+    --text-red: #900C3F;
+    --text-black: #000000;
+    --text-grey: #717171;
 
+    /*gradient colors*/
+    --pink:linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 
+}
 
 
 /*------------start navbar styling-----------------*/
@@ -49,16 +58,19 @@ html, body{
     padding: 1rem 1rem;
     font-size: 1.2rem;
     position: relative;
+    
 }
 
 .nav-brand a{           /*icon text*/
-    font-size: 1.5rem;
+    font-size: 3rem;
     padding: 1rem 0;
     display:block;
+    font-family: Estonia;
+    color: black;
 }
 
 .social{
-    
+
     padding: 1rem 0;
 
 }
