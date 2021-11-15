@@ -3,9 +3,29 @@
 html, body{
     margin:0%;
     box-sizing:border-box;
-    overflow:hidden;
+    overflow-x:hidden;
 }
 /*--------*--------end body styling--------*------*/
+
+
+/*---------------------Global Classes--------------------------*/
+    a{
+        text-decoration: none;      /*removes underline in header*/  
+    }
+
+    .flex-row {
+        display:flex;
+        flex-direction:row;        /*places all nav items in a horizontal row*/
+        flex-wrap: wrap;            /*creates collapsable nav*/
+        justify-content: space-between;
+
+    }
+    ul{
+        list-style-type: none;
+    }
+
+    /*---------------------Global Classes--------------------------*/
+
 
 
 
@@ -14,16 +34,32 @@ html, body{
 .nav{
 
     background: white;
-    padding:0 2rem;
-    height:0rem;    /* height creates a collapsable nav menu*/
-    min-height: 10vh;
+    padding: 0 2rem;
+    height: 0rem;    /* height creates a collapsable nav menu*/
+    min-height: 40vh;
+    overflow-x: hidden;
 }
 
-.nav.nav-brand a{
-    font-size: 1.6rem;
-    padding:1rem 0;
-    text-decoration:none;
+.nav-items{
+    display: flex;
+    margin: 0;
+
+}
+.nav-link {
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    position: relative;
 }
 
+.nav-brand a{           /*icon text*/
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    display:block;
+}
 
+.social{
+    
+    padding: 1rem 0;
+
+}
 /*------*------end navbar styling---------*--------*/
