@@ -3,9 +3,9 @@ $(document).ready(function(){
     $nav = $('.nav');
     $toggleCollapse = $('.toggle-collapse');
 
-    /* click even on toggle menu*/
+    /* click event on toggle menu*/
     $toggleCollapse.click(function(){
-        $nav.$toggleCollapse('collapse');
+        $nav.$toggleClass('collapse');
     })
 
 });
