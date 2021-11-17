@@ -1,3 +1,9 @@
+/*font explora for poems*/
+/*font Estonia for icons*/
+/*font lora for text*/
+/*font quicksand for items*/
+/*font Sharmila for headers*/
+
 @import url(../css/fonts.css);
 /*----------start body styling------------*/
 html, body{
@@ -24,7 +30,7 @@ html, body{
         list-style-type: none;
     }
 
-    /*---------------------End Global Classes--------------------------*/
+/*---------------------End Global Classes--------------------------*/
     
 
 :root{
@@ -44,12 +50,16 @@ html, body{
 
     background: white;
     padding: 0 2rem;
-    height: 0rem;    /* height creates a collapsable nav menu*/
+    height: 0rem;    
     min-height: 10vh;
     overflow-x: hidden;
 }
+.nav .nav-menu{
+    justify-content: space-between;
+}
 
-.toggle-collapse{
+/*-----------collapse menu-----------*/
+.nav .toggle-collapse{
 position: absolute;
 top: 0%;
 width: 90%;
@@ -57,80 +67,82 @@ cursor: pointer;
 display: none;
 }
 
-.toggle-icons{
+.nav .toggle-collapse .toggle-icons{
     display: flex;
     justify-content: flex-end;
-    padding: 1.7rem 0;;
+    padding: 1.7rem 0;
 }
-.toggle-icons i{
+.nav .toggle-collapse .toggle-icons i{
     font-size: 1.4rem;
     color: black;
 }
-.toggle-icons i:hover{
+
+
+.nav .toggle-collapse .toggle-icons i:hover{
     color:rgb(0, 217, 255);
 }
 
 .collapse{
-    height: 20rem;
+    height: 35rem;
+}
+/*-----*------collapse menu---*--------*/
+
+
+
+/*-----------nav items menu-----------*/
+.nav-link:hover {
+ background: var(--skypink);
 }
 
-.nav-items{
+.nav .nav-items{
     display: flex;
     margin: 0;
 
 }
-.nav-link:hover {
- background: var(--skypink);
- 
-}
-.nav-link:hover a{
-    Color: rgb(0, 217, 255);
-    
-}
-.nav-link {
+.nav .nav-items .nav-link{
     padding: 1.6rem 1rem;
     font-size:1.1rem;
     position: relative;
     font-family: Quicksand;  
-    font-size:1.1rem;
 
 }
+.nav .nav-items .nav-link:hover a{
+    Color: rgb(0, 217, 255);
+    
+}
+/*-------*----nav items menu---*--------*/
 
 
-/*explora for poems*/
-/*Estonia for icons*/
-/*lora for text*/
-/*quicksand for items*/
-/*Sharmila for headers*/
-
-
-.nav-brand a{           /*icon text*/
-    font-size: 3rem;
+/*-------icon text---------*/
+.nav .nav-brand a{           
+    font-size: 1.6rem;
     padding: 1rem 0;
-    display:block;
+    display: block;
     font-family: Estonia;
     color: black;
 }
 
-.social i{
+.nav .social i{
     padding: 1rem 0;
     font-size: 1rem;
     color: rgb(82, 82, 82);
 }
-.social i:hover{
+.nav .social i:hover{
     color:rgb(0, 217, 255);
 }
+
 /*------*------end navbar styling---------*--------*/
 
 
 
 
 /*-----------------Viewport has less than or equal 750px ----------------------*/
-@media only screen and (max-width:750px) {
-    .nav-menu,.nav-items{
+@media only screen and (max-width: 750px) {
+    .nav .nav-menu, .nav-items{
         flex-direction: column;
     }
-    .toggle-collapse{
+
+    .nav .toggle-collapse{
         display: initial;
     }
 }
